@@ -1,0 +1,3 @@
+Object Serialization and Deserialization
+
+Design a Student class with data field name and age. Then, create two objects of this student class named as Student1 and Student2. Pass the values name=Sita and age -23 to Student1 and name=Gita and age=24 to Student2. Apply the concept of serialization and store the value of Student1 and Student2 objects in 2 different text files. After this apply the concept of deserialization to retrieve the stored states of Student1 and Student2 objects. 
