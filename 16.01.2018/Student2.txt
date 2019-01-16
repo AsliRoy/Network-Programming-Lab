@@ -1,0 +1,12 @@
+(i__main__
+Student
+p0
+(dp1
+S'age'
+p2
+I24
+sS'name'
+p3
+S'Gita'
+p4
+sb.
