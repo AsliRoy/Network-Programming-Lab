@@ -1,0 +1,3 @@
+Application Layer Protocol
+
+Write a Python network server program that will accept am unlimited number of connections, one at a time. Upon receiving a connection, it should send back to the client, the client's Ip address. Then it should wait for commands from the client. Valid commands are 'TIME', 'IP','EXIT'. To the time command, the server should return the current time. To the IP command, it should again return the client's IP address. If the client closes the connection or does not respond within a reasonable time (10 seconds), the server should close the current connection and wait for another connection. to the EXIT command, your server should close all open sockets and exit. 
