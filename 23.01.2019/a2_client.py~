@@ -1,0 +1,10 @@
+import socket
+
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket.connect(('127.0.0.1', 5001))
+data=''
+while data!='quit':
+        data = raw_input ( "SEND :" )
+        client_socket.send(data)
+	data2=client_scoket.recv(512)
+	print data2

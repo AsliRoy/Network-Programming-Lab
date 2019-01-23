@@ -1,0 +1,17 @@
+import socket
+
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+
+
+host = socket.gethostname()                           
+
+port = 9999
+
+s.connect((host, port))                               
+
+tm = s.recv(1024)                                     
+tm2 = s.recv(1024)
+s.close()
+print("The current time of the server as returned by the servre is %s" % tm.decode('ascii'))
+print("The IP address of the client as returned from the server is %s" % tm2.decode('ascii'))
