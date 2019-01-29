@@ -31,8 +31,8 @@ Student2_unpickled = pickle.load(Student2_file)
 Student2_file.close()
 
 
-print (str.format("\nThe details of student 1 after pickling are:\nName:{0}\tAge:{1}",Student1_unpickled.name, Student1_unpickled.age))
+print (str.format("\nThe details of student 1 after unpickling are:\nName:{0}\tAge:{1}",Student1_unpickled.name, Student1_unpickled.age))
 
 
-print (str.format("\nThe details of student 2 after pickling are:\nName:{0}\tAge:{1}",Student2_unpickled.name, Student2_unpickled.age))
+print (str.format("\nThe details of student 2 after unpickling are:\nName:{0}\tAge:{1}",Student2_unpickled.name, Student2_unpickled.age))
 	
