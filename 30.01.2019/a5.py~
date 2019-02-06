@@ -1,0 +1,6 @@
+import ntplib
+from time import ctime
+
+c = ntplib.NTPClient()
+response = c.request('uk.pool.ntp.org',version=3)
+print(ctime(response.tx_time))
