@@ -17,7 +17,7 @@ def echo_client(port):
     try:
 
         # Send data
-        message = "My name is Arindum Roy. I am from the Department of CSE."
+        message = "Test message. This will be echoed"
         print ("Sending %s" % message)
         sent = sock.sendto(message.encode('utf-8'), server_address)
 

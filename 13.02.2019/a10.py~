@@ -7,6 +7,7 @@ class RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 <table>
 <tr>  <td>Date and time</td>  <td>{date_time}</td>    </tr>
 <tr>  <td>Client IP Address</td>    <td>{client_host}</td>  </tr>
+<tr>  <td>Client IP Port</td>    <td>{client_port}</td>  </tr>
 </table>
 </body>
 </html>
