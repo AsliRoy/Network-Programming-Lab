@@ -1,0 +1,12 @@
+Topic: Multiplexing sockets I/O modules
+
+
+11. Write a simple web server that can return a single line/multiple line of text to any connected web browser.
+
+12. Write an efficient chart server that can handle several hundred or a large number of client connections. The chart server initializes with a few data attributes. It stores the count of clients, map of each client, and output sockets. The chart client initializes with a name argument and sends this name to the chart server.
+
+13. Write program for local port forwarder, that will redirect all traffic from a local port to a particular remote host?
+
+14. Write a client that will wait for a particular network service forever or for a time out?
+
+15. Write a program to list the network interfaces present in your machine?
