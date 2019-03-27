@@ -7,13 +7,10 @@ SERVER_HOST = 'localhost'
 
 EOL1 = b'\n\n'
 EOL2 = b'\n\r\n'
-SERVER_RESPONSE  = b"""HTTP/1.1 200 OK\r\nDate: Mon, 1 Apr 2013 01:01:01 GMT\r\nContent-Type: text/plain\r\nContent-Length: 25\r\n\r\n
-Hey there!  Have a good day!"""
+SERVER_RESPONSE  = b"""Rome was not built in a day. \n\r\n But it could surely be destroyed in a minute!"""
 
 
 class EpollServer(object):
-    """ A socket server using Epoll"""
-    
     def __init__(self, host=SERVER_HOST, port=0):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -26,7 +23,6 @@ class EpollServer(object):
         self.epoll.register(self.sock.fileno(), select.EPOLLIN)
     
     def run(self):
-        """Executes epoll server operation"""
         try:
             connections = {}; requests = {}; responses = {}
             while True:
@@ -61,7 +57,7 @@ class EpollServer(object):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Socket Server Example with Epoll')
+    parser = argparse.ArgumentParser(description='Socket Server')
     parser.add_argument('--port', action="store", dest="port", type=int, required=True)
     given_args = parser.parse_args() 
     port = given_args.port

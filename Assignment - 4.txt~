@@ -10,8 +10,3 @@ Topic: Multiplexing sockets I/O modules
 14. Write a client that will wait for a particular network service forever or for a time out?
 
 15. Write a program to list the network interfaces present in your machine?
-
-
-
-
-

@@ -1,7 +1,7 @@
 import argparse
 
 LOCAL_SERVER_HOST = 'localhost'
-REMOTE_SERVER_HOST = 'localhost'
+REMOTE_SERVER_HOST = 'www.google.com'
 BUFSIZE = 4096
 
 import asyncore
